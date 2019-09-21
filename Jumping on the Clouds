@@ -1,0 +1,27 @@
+#!/bin/python3
+
+import os
+import sys
+
+# Complete the jumpingOnClouds function below.
+def jumpingOnClouds(c):
+    answer = 0
+    val = 0
+
+    while val < len(c) - 1:
+        answer = answer + 1
+
+        if val + 2 < len(c) and c[val + 2]:
+            val = val + 1
+        else:
+
+            val = val + 2
+    return answer
+    
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    n = int(input())
+    c = list(map(int, input().rstrip().split(" ")))
+    result = jumpingOnClouds(c)
+    fptr.write(str(result) + '\n')
+    fptr.close()
