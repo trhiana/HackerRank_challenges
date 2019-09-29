@@ -1,0 +1,14 @@
+test_cases = int(input())
+
+for i in range(test_cases):
+    test_string = input()
+    evenCharacters = ""
+    oddCharacters = ""
+
+    for val in range(len(test_string)):
+        if val % 2 == 0:
+            evenCharacters += test_string[val]
+        else:
+            oddCharacters += test_string[val]
+    
+    print("{} {}".format(evenCharacters, oddCharacters)) 
