@@ -1,3 +1,3 @@
 select avg(population)
 from city
-where District = "California"
+where District = "California";
