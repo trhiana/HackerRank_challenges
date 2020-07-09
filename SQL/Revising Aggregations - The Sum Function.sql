@@ -1,3 +1,3 @@
 Select sum(population)
 From City 
-Where District = "California"
+Where District = "California";
